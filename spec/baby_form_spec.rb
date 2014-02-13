@@ -51,16 +51,18 @@ feature 'babbies' do
       click_button 'Update Baby'
 
       expected_params = {
-        'utf8' => '✓',
+        'utf8'    => '✓',
+        '_method' => 'patch',
         'baby' => {
           'first_name' => 'Cupcake',
           'last_name'  => 'Jenkins',
           'weight'     => '12',
-          'birth_date' => '2-14-2014'
+          'birth_date' => '2014-02-14'
         },
-        'commit'     =>'Create Baby',
-        'action'     =>'create',
-        'controller' =>'babies'
+        'commit'     =>'Update Baby',
+        'action'     =>'update',
+        'controller' =>'babies',
+        'id'         => baby.id.to_s
       }
 
       expect(expected_params).to eq $params
