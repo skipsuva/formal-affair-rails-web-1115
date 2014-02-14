@@ -30,10 +30,11 @@ feature 'babbies' do
         },
         'commit'     =>'Create Baby',
         'action'     =>'create',
-        'controller' =>'babies'
+        'controller' =>'babies',
+        'authenticity_token' => 'test token'
       }
 
-      expect(expected_params).to eq $params
+      expect(expected_params).to eq test_params
     end
   end
 
@@ -62,10 +63,11 @@ feature 'babbies' do
         'commit'     =>'Update Baby',
         'action'     =>'update',
         'controller' =>'babies',
-        'id'         => baby.id.to_s
+        'id'         => baby.id.to_s,
+        'authenticity_token' => 'test token'
       }
 
-      expect(expected_params).to eq $params
+      expect(expected_params).to eq test_params
     end
   end
 end

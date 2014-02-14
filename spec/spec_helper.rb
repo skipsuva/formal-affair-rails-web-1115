@@ -42,4 +42,12 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.before do
+    ActionController::Base.allow_forgery_protection = true
+  end
+end
+
+def test_params
+  $params.tap { |p| p["authenticity_token"] = "test token" }
 end

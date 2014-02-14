@@ -17,8 +17,14 @@ feature 'search' do
       fill_in('q', with: q)
       click_button 'Search'
 
-      expected_params = { 'q' => q }
-      expect(expected_params).to eq $params
+      expected_params = {
+        'q'          => q,
+        'action'     => 'create',
+        'controller' =>'searches',
+        'authenticity_token' => 'test token'
+      }
+
+      expect(expected_params).to eq test_params
     end
   end
 end

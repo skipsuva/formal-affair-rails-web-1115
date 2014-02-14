@@ -37,10 +37,11 @@ feature 'concrete' do
         },
         'commit'     =>'Create Concrete',
         'action'     =>'create',
-        'controller' =>'concretes'
+        'controller' =>'concretes',
+        'authenticity_token' => 'test token'
       }
 
-      expect(expected_params).to eq $params
+      expect(expected_params).to eq test_params
     end
   end
 
@@ -69,10 +70,11 @@ feature 'concrete' do
         'commit'     =>'Update Concrete',
         'action'     =>'update',
         'controller' =>'concretes',
-        'id'         => concrete.id.to_s
+        'id'         => concrete.id.to_s,
+        'authenticity_token' => 'test token'
       }
 
-      expect(expected_params).to eq $params
+      expect(expected_params).to eq test_params
     end
   end
 end
