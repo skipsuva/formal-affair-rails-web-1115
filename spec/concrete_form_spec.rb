@@ -62,13 +62,13 @@ feature 'concrete' do
         '_method' => 'patch',
         'concrete' => {
           'mix_type'      => concrete.mix_type,
-          'psi'           => concrete.mix_type.to_s,
+          'psi'           => concrete.psi.to_s,
           'color'         => concrete.color,
           'cost_per_yard' => concrete.cost_per_yard.to_s
         },
         'commit'     =>'Update Concrete',
         'action'     =>'update',
-        'controller' =>'concrete',
+        'controller' =>'concretes',
         'id'         => concrete.id.to_s
       }
 
