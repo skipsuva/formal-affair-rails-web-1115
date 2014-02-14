@@ -1,14 +1,12 @@
 require 'spec_helper'
 
-describe 'baby form' do
+feature 'baby form' do
   it 'uses the form_for helper' do
     baby_form_template = File.read(File.join(Rails.root, 'app', 'views', 'babies', '_form.html.erb'))
 
     expect(baby_form_template).to match(/form_for/)
   end
-end
 
-feature 'babbies' do
   context 'submitting a form for a new baby' do
     it 'generates correctly structured params' do
       visit new_baby_path
