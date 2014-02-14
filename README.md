@@ -19,7 +19,7 @@ will live.
   - Use the form_tag helper.
 
 3. Searches
-  - Use the HTML <form> tag.
+  - Use the HTML \<form\> tag.
 
 Here's the [Rails Form Helper Guide](http://guides.rubyonrails.org/form_helpers.html).
 
