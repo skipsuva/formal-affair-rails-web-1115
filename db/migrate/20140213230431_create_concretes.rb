@@ -6,7 +6,7 @@ class CreateConcretes < ActiveRecord::Migration
       t.integer :psi
       t.integer :cost_per_yard
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
