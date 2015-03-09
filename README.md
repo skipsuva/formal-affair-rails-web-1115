@@ -24,7 +24,7 @@ will live.
 
 Here's the [Rails Form Helper Guide](http://guides.rubyonrails.org/form_helpers.html).
 
-Rails uses CSRF tokens in it's forms
+Rails uses CSRF tokens in its forms
 to defend against the [cross site request forgery
 vulnerability] (http://guides.rubyonrails.org/security.html#csrf-countermeasures).
 
