@@ -1,8 +1,4 @@
----
-  tags: rails, forms, form_for, form_tag, params
-  languages: ruby 
-  resources: 3
----
+
 
 # Formal Affair
 
