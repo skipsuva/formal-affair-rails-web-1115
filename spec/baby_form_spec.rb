@@ -14,7 +14,7 @@ feature 'baby form' do
       fill_in('baby[first_name]', with: 'Junior')
       fill_in('baby[last_name]', with: 'Jeewillikers')
       fill_in('baby[weight]', with: 12)
-      fill_in('baby[birth_date]', with: '2014-02-12')
+      fill_in('baby[birth_date]', with: '2014-02-12 05:00:00.000000')
 
       click_button 'Create Baby'
 
@@ -24,7 +24,7 @@ feature 'baby form' do
           'first_name' => 'Junior',
           'last_name'  => 'Jeewillikers',
           'weight'     => '12',
-          'birth_date' => '2014-02-12'
+          'birth_date' => '2014-02-12 05:00:00.000000'
         },
         'commit'     =>'Create Baby',
         'action'     =>'create',
@@ -56,7 +56,7 @@ feature 'baby form' do
           'first_name' => 'Cupcake',
           'last_name'  => 'Jenkins',
           'weight'     => '12',
-          'birth_date' => '2014-02-14'
+          'birth_date' => '2014-02-14 05:00:00.000000'
         },
         'commit'     =>'Update Baby',
         'action'     =>'update',
