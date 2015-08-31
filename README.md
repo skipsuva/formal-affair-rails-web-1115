@@ -36,4 +36,4 @@ Fork this repository and deliver your solution in master.
 ## Resources
 * [Rails Guides](http://guides.rubyonrails.org/) - [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
 * [Rails Guides](http://guides.rubyonrails.org/security.html) - [Security: CSRF Countermeasures](http://guides.rubyonrails.org/security.html#csrf-countermeasures)
-* [Eagle Eye](http://news-anand.blogspot.com/) - [Include CSRF Token in Form](http://news-anand.blogspot.com/2013/05/include-csrf-token-in-form-ruby-on-rails.html)
+* [Stack Overflow](http://stackoverflow.com/questions/4085136/how-to-generate-authenticitytoken-on-rails) - [Include CSRF Token in Form](http://stackoverflow.com/a/4085156)
