@@ -26,8 +26,6 @@ vulnerability] (http://guides.rubyonrails.org/security.html#csrf-countermeasures
 
 When you're not using a Rails form helper, you'll need to insert your
 own CSRF token.
-[Here's](http://news-anand.blogspot.com/2013/05/include-csrf-token-in-form-ruby-on-rails.html)
-an example of how to do so.
 
 ## Deliverables
 
