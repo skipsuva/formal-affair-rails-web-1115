@@ -13,20 +13,20 @@
 
 ActiveRecord::Schema.define(version: 20140213230431) do
 
-  create_table "babies", force: true do |t|
+  create_table "babies", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "weight"
     t.datetime "birth_date"
   end
 
-  create_table "concretes", force: true do |t|
+  create_table "concretes", force: :cascade do |t|
     t.string   "mix_type"
     t.string   "color"
     t.integer  "psi"
     t.integer  "cost_per_yard"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

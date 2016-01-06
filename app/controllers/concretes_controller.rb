@@ -11,6 +11,9 @@ class ConcretesController < ApplicationController
     @concrete = Concrete.find(params[:id])
   end
 
+  def show
+  end
+
   def update
     render nothing: true
   end
